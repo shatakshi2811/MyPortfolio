@@ -14,7 +14,7 @@ if(window.scrollY>scrollThresholdNavbar){navbar.classList.add('scrolled')}else{n
 scrollToTop.addEventListener('click',()=>{window.scrollTo({top:0,behavior:'smooth'})})
 
 document.addEventListener('DOMContentLoaded',()=>{const t=document.querySelector('.typing-animation');const yr=document.getElementById('yr');if(yr){yr.textContent=new Date().getFullYear()}
-if(t){const s="Hello, I'm Apoorva Bajpai";let out="",type=true,i=0,id;function step(){clearTimeout(id);if(type){if(i<s.length){out+=s[i];i++;t.textContent=out;id=setTimeout(step,100)}else{id=setTimeout(()=>{type=false;step()},2000)}}else{if(i>0){out=out.slice(0,-1);i--;t.textContent=out;id=setTimeout(step,60)}else{id=setTimeout(()=>{type=true;step()},500)}}}step()}else{console.warn("Typing animation element (.typing-animation) not found.")}})
+if(t){const s="Hello, I'm Shatakshi Chowksey";let out="",type=true,i=0,id;function step(){clearTimeout(id);if(type){if(i<s.length){out+=s[i];i++;t.textContent=out;id=setTimeout(step,100)}else{id=setTimeout(()=>{type=false;step()},2000)}}else{if(i>0){out=out.slice(0,-1);i--;t.textContent=out;id=setTimeout(step,60)}else{id=setTimeout(()=>{type=true;step()},500)}}}step()}else{console.warn("Typing animation element (.typing-animation) not found.")}})
 
 const sections=document.querySelectorAll('.section-animate');
 if('IntersectionObserver'in window){
